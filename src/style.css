@@ -1,0 +1,262 @@
+:root {
+  font-family: "Open Sans";
+  --text-bg: #10101095;
+}
+
+body {
+  position: relative;
+  margin: 0px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6sEHIt6txRC1sDORP_xjbD07kakjEBr6Bb3PGFq7LxxR4H65ehQ");
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://i1.wp.com/media.defense.gov/2015/Jun/10/2001078490/888/591/0/150605-F-XV591-007.JPG");
+  background-size: cover;
+  height: auto;
+}
+#button-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header_button {
+  align-self: center;
+  white-space: nowrap;
+  height: 80px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 3px 5px #00000050;
+  font-size: 1.5em;
+  border: none;
+  transition: all 100ms ease-in;
+}
+
+.header_button:focus {
+  outline: none;
+  border-bottom: solid transparent 0px;
+  filter: brightness(90%);
+}
+
+.rentals {
+  background: blueviolet;
+  border-bottom: solid indigo 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.reservations {
+  background: tomato;
+  border-bottom: solid #be0027 10px;
+}
+.testimonials {
+  background: khaki;
+  border-bottom: solid darkkhaki 10px;
+}
+.faq {
+  background: MediumAquaMarine;
+  border-bottom: solid teal 10px;
+}
+.about {
+  background: Cyan;
+  border-bottom: solid DarkTurquoise 10px;
+}
+.contact {
+  background: orange;
+  border-bottom: solid darkorange 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  font-family: "Arial";
+}
+.text {
+  color: whitesmoke;
+  background: var(--text-bg);
+  padding: 25px;
+  margin: 25px;
+  font-size: 1.8em;
+  text-shadow: 0 3px 5px #000000;
+}
+.intro-button {
+  text-shadow: 0 3px 5px #000000;
+  color: whitesmoke;
+  align-self: center;
+  background: var(--text-bg);
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+.intro-button:hover {
+  background: #05050599;
+}
+.intro-button:active {
+  background: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+#previews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  padding: 25px;
+  transition: all 500ms ease;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border: solid gray 1px;
+  margin: 25px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px gray;
+  overflow: hidden;
+}
+.preview:hover .preview-info {
+  height: auto;
+  padding: 5px;
+  font-size: 12px;
+}
+.preview:hover .shop-button {
+  visibility: visible;
+  opacity: 0.92;
+}
+
+.preview-info {
+  align-self: flex-end;
+  width: 100%;
+  height: 0%;
+  background: white;
+  border-radius: 4px;
+  align-self: center;
+  opacity: 0.92;
+  text-align: left;
+  font-size: 0px;
+  transition: all 200ms ease;
+}
+.info-header {
+  padding-left: 5px;
+}
+.info-list {
+  font-weight: bold;
+  padding: 5px;
+}
+.shop-button {
+  position: relative;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  background: white;
+  border-radius: 4px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 100ms ease-out;
+}
+.shop-button:hover {
+  background: whitesmoke;
+}
+.shop-button:active {
+  background: lightgray;
+}
+#offers-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  min-height: 400px;
+  background: #ffffff;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 150px;
+  height: auto;
+}
+
+#statement {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 500px;
+  background: url("https://images.unsplash.com/photo-1507836127377-5757cd3e6e6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
+  background-size: cover;
+}
+footer {
+  color: lightblue;
+  font-size: 1em;
+  text-align: center;
+}
+@media only screen and (max-width: 650px) {
+  body {
+  }
+  .header_button {
+    font-size: 0.8em;
+  }
+  #offers-section {
+    flex-direction: column;
+  }
+
+  #previews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    background: transparent;
+    padding: 0px;
+    transition: all 500ms ease;
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: solid gray 1px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px gray;
+    overflow: hidden;
+  }
+  .preview-info {
+    height: auto;
+    padding: 5px;
+    font-size: 22px;
+  }
+  .shop-button {
+    visibility: visible;
+    opacity: 0.92;
+  }
+}
